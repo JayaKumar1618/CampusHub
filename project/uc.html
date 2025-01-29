@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        /* General Styling */
+        body {
+            background-color: #004d40; /* Teal background */
+            color: #f4f4f4; /* Light gray text */
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #f4f4f4; /* Light gray */
+            color: #004d40; /* Teal text */
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .container h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ffa726; /* Orange */
+        }
+
+        .container p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .progress-bar {
+            background-color: #004d40; /* Teal */
+            height: 20px;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .progress {
+            background-color: #ffa726; /* Orange */
+            height: 100%;
+            width: 70%; /* Example progress percentage */
+            animation: progressAnimation 2s ease-in-out;
+        }
+
+        @keyframes progressAnimation {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 70%;
+            }
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Coming Soon!</h1>
+        <p>Our website is currently under construction. We're working hard to provide you with the best experience. Stay tuned!</p>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <div class="contact-info">
+            <p>Contact us at: <strong>jayakumar@gmail.com</strong></p>
+            <p>Follow us on social media for updates!</p>
+        </div>
+        <div class="footer">
+            &copy; 2024 Academic Institution. All Rights Reserved.
+        </div>
+    </div>
+</body>
+</html>

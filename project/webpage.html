@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="page">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="college-name">
+                <h1>SRM UNIVERSITY</h1>
+            </div>
+            <div class="top-right">
+                <div class="navigation">
+                    <a href="Webpage.html" class="nav-link">Home</a>
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                    <a href="uc.html" class="nav-link">A-Z Index</a>
+                    <a href="studentlog.html" class="nav-link">Student Login</a>
+                    <a href="staff.html" class="nav-link">Staff Login</a>
+                </div>
+                <div class="search-container">
+                    <label for="search-box">Search:</label>
+                    <input type="text" id="search-box" placeholder="Type to search...">
+                </div>
+            </div>
+        </div>
+
+        <!-- Full Row Navigation with White Background -->
+        <nav class="full-row-nav white-box">
+            <a href="aboutus.html">About Us</a>
+            <a href="acd.html">Academics</a>
+            <a href="reg.html">Registration</a>
+            <a href="uc.html">Placements</a>
+            <a href="uc.html">Activities</a>
+            <a href="uc.html">Events</a>
+            <a href="gal.html">Gallery</a>
+        </nav>
+
+        <!-- White Container with Blue Overlay -->
+        <div class="container white-box">
+            <div class="overlay">
+                <img id="slider" src="img1.jpg" alt="Image Slider">
+            </div>
+        </div>
+
+        <!-- Three Adjacent Sections with White Background -->
+        <div class="main-content white-box">
+            <!-- Box 1: Retained Quick Links Content -->
+            <div class="blue-box">
+                <div class="small-white-box">
+                    <h2>Quick Links</h2>
+                    <div class="quick-links">
+                        <a href="studentlog.html" class="quick-link">
+                            <img src="img3.png" alt="Student Parent Login">
+                            Student Parent Login
+                        </a>
+                        <a href="https://www.srmist.edu.in/" class="quick-link">
+                            <img src="img4.png" alt="Campus Net">
+                            Campus Net
+                        </a>
+                        <a href="https://mail.google.com" class="quick-link">
+                            <img src="img5.png" alt="SRM Mail">
+                            SRM Mail
+                        </a>
+                        <a href="kno.html" class="quick-link">
+                            <img src="img6.png" alt="Knowledge Portal">
+                            Knowledge Portal
+                        </a>
+                        <a href="https://webstor.srmist.edu.in/web_assets/srmist-virtual-tour-vo/index.htm" class="quick-link">
+                            <img src="img7.png" alt="Tour">
+                            Tour
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Box 2: Updated Content with History and Motto -->
+            <div class="blue-box large-box">
+                <div class="small-white-box">
+                    <h2>History of SRM University</h2>
+                    <p><strong>SRM University</strong>, SRM University (Sri Ramaswamy Memorial University) was established in 1985 as SRM Engineering College in Kattankulathur, Tamil Nadu. Over the years, it evolved into one of India’s premier private universities, and doctoral programs across diverse disciplines like engineering, medicine, management, and the arts. With a strong emphasis on research, innovation, and global exposure, SRM has collaborations with numerous international universities and attracts students from all over the world.</P>
+
+<p>
+The motto of SRM University is "Learn, Leap, Lead", reflecting its commitment to empowering students with knowledge, encouraging them to think beyond boundaries, and preparing them to be leaders in their chosen fields. The institution aims to foster academic excellence, ensuring that students are well-equipped to face global challenges and make meaningful contributions to society..</p>
+                        <img src="img10.png" alt="SRM University History" />
+                </div>
+            </div>
+
+<!-- Box 3: News and Events -->
+<div class="blue-box">
+    <div class="small-white-box">
+        <h2>News and Events</h2>
+        <div class="news-ticker">
+            <div class="news-item">
+                <h3>SRM University December 2024 Events</h3>
+                <ul>
+                    <li><strong>Milan 2024: Cultural Festival</strong> - Date: December 13-16, 2024 - Location: SRMIST, Kattankulathur - A cultural festival featuring over 150 events in music, dance, fashion, and gaming.</li>
+                    <li><strong>2nd Research Scholars’ Summit</strong> - Date: December 20-21, 2024 - Location: SRM University AP - A summit focusing on research collaborations.</li>
+                    <li><strong>International Conference on Gender Exploitation and Resistance</strong> - Date: December 17-18, 2024 - Location: SRM University AP - A conference exploring gender issues globally.</li>
+                    <li><strong>Alumni Day 2024</strong> - Date: December 21, 2024 - Location: SRMIST - A day to celebrate SRM alumni.</li>
+                    <li><strong>Workshop on Partial Differential Equations</strong> - Date: December 23-28, 2024 - Location: SRM University Trichy - Workshop on solving partial differential equations.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="white-rounded-box">
+    <div class="blue-box-inside">
+        <img src="img11.png" alt="Image Inside the Blue Box">
+    </div>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2024 SRM University. All Rights Reserved.</p>
+    <p>Powered by SRM University Web Team. Designed for educational purposes.</p>
+</footer>
+
+
+
+
+    <script>
+        // JavaScript to handle image slider
+        const images = ["img1.jpg", "img2.png"];
+        let index = 0;
+
+        setInterval(() => {
+            index = (index + 1) % images.length; // Cycle through images
+            document.getElementById("slider").src = images[index];
+        }, 3000); // Change every 3 seconds
+    </script>
+</body>
+</html>

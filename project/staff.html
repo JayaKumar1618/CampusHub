@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Login</title>
+    <style>
+        /* General Styling */
+        body {
+            background-color: #004d40; /* Teal background */
+            color: #f4f4f4; /* Light gray text */
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: #f4f4f4; /* Light gray */
+            color: #004d40; /* Teal text */
+            border-radius: 15px;
+            width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        .login-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-header h1 {
+            font-size: 28px;
+            color: #ffa726; /* Orange */
+            margin: 0;
+        }
+
+        .login-header p {
+            font-size: 16px;
+            color: #004d40;
+            margin: 5px 0 0;
+        }
+
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .login-form label {
+            font-size: 16px;
+            color: #004d40;
+        }
+
+        .login-form input {
+            padding: 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .login-form input:focus {
+            outline: none;
+            border-color: #ffa726; /* Orange */
+            box-shadow: 0 0 5px rgba(255, 167, 38, 0.5);
+        }
+
+        .login-button {
+            background-color: #00695c; /* Teal */
+            color: #f4f4f4; /* Light gray */
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-button:hover {
+            background-color: #ffa726; /* Orange */
+        }
+
+        .login-button:active {
+            background-color: #004d40; /* Dark teal */
+        }
+
+        .back-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .back-link a {
+            color: #ffa726; /* Orange */
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <h1>Staff Login</h1>
+            <p>Please enter your credentials</p>
+        </div>
+        <form class="login-form">
+            <label for="staff-id">Staff ID</label>
+            <input type="text" id="staff-id" name="staff-id" placeholder="Enter your Staff ID" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <button type="submit" class="login-button">Login</button>
+        </form>
+        <div class="back-link">
+            <a href="#">Go Back</a>
+        </div>
+    </div>
+</body>
+</html>

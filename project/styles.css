@@ -1,0 +1,329 @@
+/* General Styling */
+body {
+    background-color: #004d40; /* Teal background */
+    color: #f4f4f4; /* Light gray text */
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    width: 90%;
+    margin: auto;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.college-name h1 {
+    font-size: 55px;
+    color: #ffa726; /* Orange */
+    margin: 0;
+}
+
+.top-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.navigation {
+    margin-bottom: 10px;
+}
+
+.nav-link {
+    color: #f4f4f4; /* Light gray */
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 25px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #ffa726; /* Orange on hover */
+    color: #004d40; /* Teal text on hover */
+}
+
+.nav-link:active {
+    background-color: #ffa726; /* Orange on click */
+    color: #004d40; /* Teal text */
+}
+
+.search-container {
+    display: flex; /* Enables flexbox for alignment */
+    justify-content: center; /* Centers the search box horizontally */
+    align-items: center; /* Aligns items vertically */
+    margin-top: 10px; /* Adds spacing from the top */
+    gap: 10px; /* Adds space between label and input */
+    position: relative; /* Enables positioning */
+    left: -200px; /* Moves the search box 30px to the right */
+}
+
+.search-container label {
+    font-size: 16px;
+}
+
+.search-container input {
+    padding: 8px; /* Increased padding for better appearance */
+    font-size: 14px;
+    border-radius: 9px;
+    border: 1px solid #ccc;
+    width: 200px; /* Sets a fixed width for consistency */
+}
+
+
+/* Full Row Navigation */
+.full-row-nav {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.full-row-nav a {
+    color: #004d40; /* Teal text for white background */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+.full-row-nav a:hover {
+    color: #ffa726; /* Orange */
+}
+
+.white-box {
+    background-color: #f4f4f4; /* Light gray */
+    border-radius: 15px;
+    padding: 13px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* White Container with Blue Overlay */
+.container {
+    position: relative;
+    height: 590px;
+}
+
+.overlay {
+    position: absolute;
+    background-color: #00695c; /* Teal overlay */
+    border-radius: 10px;
+    width: 98.5%;
+    height: 596px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay img {
+    border-radius: 10px;
+    width: 99%;
+    height: 97%;
+    object-fit: cover;
+}
+
+/* Three Adjacent Sections */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Box Styles */
+.blue-box {
+    background-color: #00695c; /* Teal */
+    border-radius: 15px;
+    flex: 1;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.large-box {
+    flex: 1.2;
+}
+
+/* Small White Box Styles */
+.small-white-box {
+    background-color: #f4f4f4; /* Light gray */
+    border-radius: 10px;
+    width: 85%;
+    height: 90%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    flex-direction: column;
+    color: #004d40; /* Teal text */
+}
+
+/* Quick Links Section */
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+}
+
+.quick-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #004d40; /* Teal text */
+    font-size: 18px;
+    transition: color 0.3s ease;
+    text-align: left;
+    width: 100%;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.quick-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.quick-link:last-child::after {
+    border-bottom: none;
+}
+
+.quick-link img {
+    width: 85px;
+    height: 85px;
+    margin-right: 10px;
+    border-radius: 0%;
+}
+
+.quick-link:hover {
+    color: #ffa726; /* Orange */
+}
+
+.quick-link:active {
+    color: #ffa726; /* Orange */
+}
+
+/* Image inside the boxes (e.g., Box 2) */
+.small-white-box img {
+    max-width: 70%;
+    max-height: 150px;
+    object-fit: contain;
+}
+
+/* News Ticker Styles */
+.news-ticker {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: ticker 15s linear infinite;
+}
+
+.news-item ul {
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #004d40; /* Teal text */
+}
+
+.news-item li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Animation for scrolling news */
+@keyframes ticker {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/* White Box - Adjustable Width and Height */
+.white-rounded-box {
+    background-color: #f4f4f4; /* Light gray background */
+    border-radius: 25px;
+    padding: 20px;
+    margin: 40px auto;
+    width: 100%;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+/* Blue Box Inside the White Box - Adjustable Size */
+.blue-box-inside {
+    background-color: #00695c; /* Teal */
+    border-radius: 15px;
+    margin: -6px;
+    padding: 8px;
+    width: 99.7%;
+    height: 97%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Image Inside the Blue Box - Adjustable Size */
+.blue-box-inside img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    animation: moveImage 10s linear infinite;
+}
+
+/* Keyframes for Moving Image from Right to Left */
+@keyframes moveImage {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #004d40; /* Teal background */
+    color: #f4f4f4; /* Light gray text */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.footer p {
+    margin: 5px 0;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* General Styling */
+        body {
+            background-color: #004d40; /* Teal background */
+            color: #f4f4f4; /* Light gray text */
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #f4f4f4; /* Light gray */
+            color: #004d40; /* Teal text */
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .about-header h1 {
+            font-size: 36px;
+            color: #ffa726; /* Orange */
+            margin: 0;
+        }
+
+        .about-header p {
+            font-size: 18px;
+            color: #004d40;
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .about-section {
+            flex: 1 1 calc(50% - 20px);
+            background-color: #e0f2f1; /* Light teal */
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .about-section img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .about-section h2 {
+            font-size: 24px;
+            color: #00695c; /* Teal */
+            margin-bottom: 10px;
+        }
+
+        .about-section p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #004d40;
+        }
+
+        .team-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .team-section h2 {
+            font-size: 28px;
+            color: #ffa726; /* Orange */
+        }
+
+        .team-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .team-images img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #004d40; /* Teal border */
+        }
+    </style>
+</head>
+<body>
+    <div class="about-container">
+        <div class="about-header">
+            <h1>About Us</h1>
+            <p>Learn more about our mission, vision, and the people behind the success.</p>
+        </div>
+        <div class="about-content">
+            <div class="about-section">
+                <img src="img13.jpeg" alt="Our Mission">
+                <h2>Our Mission</h2>
+                <p>We are committed to providing exceptional services and creating impactful experiences. Our goal is to inspire and empower individuals through our innovative solutions and dedicated approach.</p>
+            </div>
+            <div class="about-section">
+                <img src="img14.jpeg" alt="Our Vision">
+                <h2>Our Vision</h2>
+                <p>We envision a future where our contributions make a lasting difference in people's lives. By embracing technology and human creativity, we strive to shape a better tomorrow for everyone.</p>
+            </div>
+        </div>
+        <div class="team-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-images">
+                <img src="img16.jpg" alt="Team Member 1">
+                <img src="img17.jpg" alt="Team Member 2">
+                <img src="img18.jpg" alt="Team Member 3">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

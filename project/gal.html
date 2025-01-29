@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        /* General Styling */
+        body {
+            background-color: #004d40; /* Teal background */
+            color: #f4f4f4; /* Light gray text */
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f4f4f4; /* Light gray */
+            color: #004d40; /* Teal text */
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-container h1 {
+            text-align: center;
+            color: #ffa726; /* Orange */
+            margin-bottom: 20px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item .caption {
+            position: absolute;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            color: #f4f4f4; /* Light gray text */
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            font-size: 16px;
+            transition: opacity 0.3s ease;
+            opacity: 0;
+        }
+
+        .gallery-item:hover .caption {
+            opacity: 1;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #004d40; /* Teal background */
+            color: #f4f4f4; /* Light gray text */
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Gallery</h1>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="img1.jpg" alt="Campus View">
+                <div class="caption">Campus View</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img23.jpg" alt="Library">
+                <div class="caption">Library</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img21.jpeg" alt="Laboratory">
+                <div class="caption">Laboratory</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img24.jpg" alt="Auditorium">
+                <div class="caption">Auditorium</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img25.jpg" alt="Sports Complex">
+                <div class="caption">Sports Complex</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img26.jpg" alt="Hostel">
+                <div class="caption">Hostel</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img27.jpg" alt="Cafeteria">
+                <div class="caption">Cafeteria</div>
+            </div>
+            <div class="gallery-item">
+                <img src="img28.jpg" alt="Green Campus">
+                <div class="caption">Green Campus</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Academic Institution. All Rights Reserved.</p>
+    </div>
+</body>
+</html>
